@@ -1,5 +1,4 @@
 function century(year) {
-    if ()
     return;
   }
 
