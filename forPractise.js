@@ -1,4 +1,6 @@
-str = "Hell";
-console.log(str.length);
+let number = 43214;
+let arr = [];
 
-console.log(str.charAt(1) + str.charAt(2));
+arr = String(number).split("").map(Number);
+
+console.log(arr);
