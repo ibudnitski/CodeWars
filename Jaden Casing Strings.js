@@ -12,6 +12,8 @@ Link to Jaden's former Twitter account @officialjaden via archive.org
 String.prototype.toJadenCase = function () {
     return this
     .split(" ")
-    .map(i => i.replace(i[0], i[0].toUpperCase()))
+        .map(i => i.replace(i[0], i[0].toUpperCase()))
     .join(" ");
   };
+
+  
