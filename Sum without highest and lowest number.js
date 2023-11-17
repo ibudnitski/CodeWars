@@ -13,25 +13,23 @@ If an empty value ( null, None, Nothing etc. ) is given instead of an array, or 
  */
 
 function sumArray(array) {
-    if(array[0] == undefined){
-        return 0 + " NULL";
-    }else if(array.length === 1 || array.length === 0){
+    if (array === null || !Array.isArray(array) || array.length <= 2) {
         return 0;
     }
-    let min = Math.min(...array);
-    let max = Math.max(...array);
+
+    let minV = Math.min(...array);
+    let maxV = Math.max(...array);
+
     let sum = 0;
-    for (let i = 0; i < array.length; i++){
-        if(array[i] === min || array[i] === max){
-            continue;
-        }else{
-            sum += array[i];
-        }
+
+    for (let i = 0; i < array.length; i++) {
+        sum += array[i];
     }
-    return sum;
+    return sum - (minV + maxV);
 }
 
 
-let arr = [1];
+let arr = [0, 1, 6, 10, 10];
+
 
 console.log(sumArray(arr));
