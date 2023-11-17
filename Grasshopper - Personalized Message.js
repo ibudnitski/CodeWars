@@ -10,4 +10,4 @@ function greet (name, owner) {
     console.log(name === owner ? "Hello boss" : "Hello guest");
   }
 
-greet("David", undefined;
+greet("David", "Igor");
