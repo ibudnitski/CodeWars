@@ -19,7 +19,7 @@ f3(); */
 
 console.log(sum(2,3)); */
 
-let sum2 = (a,b) => {
+/* let sum2 = (a,b) => {
     if(a > b){
         return " A more then B"
     }else{
@@ -29,4 +29,16 @@ let sum2 = (a,b) => {
 ;
 
 console.log(sum2(2,3));
+ */
 
+
+/* function ask(question, yes, no) {
+    if (confirm(question)) yes()
+    else no();
+  }
+  
+  ask(
+    "Вы согласны?",
+    function() { alert("Вы согласились."); },
+    function() { alert("Вы отменили выполнение."); }
+  ); */
