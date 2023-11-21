@@ -27,5 +27,9 @@ let count = 0;
 let action = () => console.log(`Repeating ${++count}`);
 
 
-setInterval(action, 300)
+// setInterval(action, 300)
+let click = function(){
+    console.log("You clicked the button!", this)
+}
+document.getElementById("btn").addEventListener("click", action);
 
