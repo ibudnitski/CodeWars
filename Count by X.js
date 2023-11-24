@@ -22,3 +22,4 @@ function countBy(x, n) {
   }
 
 console.log(countBy(2,5));
+
