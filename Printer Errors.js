@@ -9,12 +9,12 @@ You have to write a function printer_error which given a string will return the 
 The string has a length greater or equal to one and contains only letters from a to z. */
 
 function printerError(s) {
-    // your code
     let strLength = s.length;
     let faultyCounter = 0;
-    // let regex = /^[a-mA-M]+$/;
-    for (const key in s) {
-        if (!(key >= "a" && key <= "m")) {
+    for (const key of s) {
+        if ((key >= "a" && key <= "m")) {
+        }
+        else {
             faultyCounter++;
         }
     }
