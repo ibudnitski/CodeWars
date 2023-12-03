@@ -18,7 +18,7 @@ function printerError(s) {
             faultyCounter++;
         }
     }
-    return console.log(`${faultyCounter}/${strLength}`);
+    return `${faultyCounter}/${strLength}`;
 }
 
-printerError("aaaaaaaaaaaaaaaabbbbbbbbbbbbbbbbbbmmmmmmmmmmmmmmmmmmmxyz");
+printerError("aaaaaaaaaaaaaaaabbbbbbbbbbbbbbbbbbxmmmmmmmmmvmmmmmmmmmm");
