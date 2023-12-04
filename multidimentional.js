@@ -4,10 +4,23 @@ const arr = [
     [17,23,22,12],
 ];
 
-for (let i = 0; i < arr.length; i++) {
+// let result = [];
+
+/* for (let i = 0; i < arr.length; i++) {
     for (let k = 0; k < arr[i].length; k++) {
         if (arr[i][k] % 2 == 0) {
-            console.log(arr[i][k]);
+            arr.splice(arr[i][k], 1);
         }
     }
 }
+
+for (let iterator of arr) {
+    for (let elem of iterator) {
+        if(elem % 2 == 0){
+            result.push(elem);
+        }
+    }
+} */
+
+console.log(arr.map(item => item.filter(num => num % 2 == 0)));
+console.log(arr);
